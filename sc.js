@@ -2,10 +2,15 @@
 
 function encrypt(text) {
     let encryptedText = text.replace(/e/ig, 'enter')
+                            .replace(/é/ig, 'enter')
                             .replace(/i/ig, 'imes')
+                            .replace(/í/ig, 'imes')
                             .replace(/a/ig, 'ai')
+                            .replace(/á/ig, 'ai')
                             .replace(/o/ig, 'ober')
-                            .replace(/u/ig, 'ufat');
+                            .replace(/ó/ig, 'ober')
+                            .replace(/u/ig, 'ufat')
+                            .replace(/ú/ig, 'ufat');
     return encryptedText;
 }
 
