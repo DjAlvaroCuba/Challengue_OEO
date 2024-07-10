@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="input-container">
+                <label for="input-text">Ingrese el texto aquí</label>
+                <textarea id="input-text" placeholder="Escribe el texto aquí"></textarea>
+                <p class="note">Challengue ONE Education - Alvaro Cuba</p>
+            </div>
+            <div class="button-container">
+                <button id="encrypt-button">Encriptar</button>
+                <button id="decrypt-button">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-container">
+            <iframe src="https://giphy.com/embed/2AuNugaSdWBvG" width="200" height="200" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+            <p class="instruction">Texto encriptado o desencriptado.</p>
+            <textarea id="Texto-encriptado" rows="5" placeholder="El texto encriptado/desencriptado aparecerá aquí"></textarea> <br>
+            <button id="copy-button">Copiar Texto</button> 
+            <span id="copy-message" class="copy-message">Texto copiado al portapapeles</span>
+        </div>
+    </div>
+
+  
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="sc.js"></script>
+</body>
+</html>
